@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ksoft Innovations</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="Libraries/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/logoKsoftTech.png" alt=""></a>
+
+
+
+              <div class="toggle-icon">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa fa-bars"></i></button>
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Offcanvas with body scrolling</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <p>Try scrolling the rest of the page to see this option in action.</p>
+                  </div>
+                </div>
+              </div>
+             
+
+
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services <i class="fa fa-chevron-down" style="font-size: 13px;"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <button class="btnButton"><i class="fa fa-user"></i> Get A Quote</button>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="hero">
+        <div class="slideshow-container">
+
+            <div class="mySlides">
+              <h1>The Best IT Solutions <br>For Your Business.</h1>
+              <p>We provide the wide range of high quality IT services and best practices solutions to our customers making their business better.</p>
+              <button>Start Your Project</button>
+            </div>
+          
+            <div class="mySlides">               
+               <h1>Award-Winning <br>Software Development</h1>
+               <p>We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
+               <button>View Case Studies</button>
+            </div>
+          
+            <div class="mySlides">
+                <h1>24/7 Tech & Business <br>Support</h1>
+                <p>We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.</p>
+                <button>Work With Us</button>
+            </div>
+          
+            <a class="prev" onclick="plusSlides(-1)"><i class="fa fa-chevron-left" style="color: white; font-size: 20px; font-weight: bold;"></i></a>
+            <a class="next" onclick="plusSlides(1)"><i class="fa fa-chevron-right" style="color: white; font-size: 20px; font-weight: bold;"></i></a>
+          
+          </div>
+          
+          <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+    </section>
+
+     <script src="js/textslide.js"></script>
+     <script src="Libraries/bootstrap/js/popper.js"></script>
+    <script src="Libraries/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
