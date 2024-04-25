@@ -34,62 +34,6 @@ header{
     padding: 0.7rem;
     border-radius: 0.5rem !important;
 }
-.hero{
-    background: url("..//img/kimg3.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: contain;
-    height: 100vh;
-    padding: 1rem;
-}
-/* Slideshow container */
-.slideshow-container {
-    position: relative;
-  }
-  
-  /* Slides */
-  .mySlides {
-    display: none;
-    padding: 80px;
-    text-align: center;
-  }
-  
-  /* Next & previous buttons */
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -30px;
-    padding: 16px;
-    font-weight: bold;
-    font-size: 20px;
-    user-select: none;
-  }
-  
-  /* Position the "next button" to the right */
-  .next {
-    position: absolute;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  .dot-container {
-      text-align: center;
-      padding: 20px;
-  }
-  .dot {
-    cursor: pointer;
-    margin: 0 2px;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  
-  /* Add a background color to the active dot/circle */
-  .active, .dot:hover {
-    background-color: #717171;
-  }
 button{
     border: none;
     outline: none;
@@ -98,22 +42,67 @@ button{
     padding: 1rem;
     border-radius: 1rem !important;
 }
-.mySlides h1{
-    text-align: center;
-    font-size: 80px;
-    font-family: Manrope, sans-serif;
-    color: #FFFFFF;
-    font-weight: bold;
-}
-.mySlides p{
-    text-align: center;
-    font-family: Manrope, sans-serif;
-    color: #000;
-    font-size: 20px;
-}
 .toggle-icon{
     display: none;
 }
+.carousel-item img{
+    height: 100vh;
+}
+.navs li{
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.mailpage{
+    display: flex;
+    gap: 0.5rem;
+}
+.mailname a{
+    text-decoration: none;
+    color: #3E4265 !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.callpage{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+.callname a{
+    text-decoration: none;
+    color: #3E4265 !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.dropdown-item{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: #3E4265;
+    margin-top: 0.5rem;
+}
+.dropdown-item:hover{
+    color: #6366F1 !important;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .notes{
+    margin-top: 4rem !important;
+    padding: 1rem;
+  }
+  .image img{
+    height: 90vh;
+    width: 100%;
+    border-radius: 1rem;
+  }
+  .text h2{
+    text-align: left;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
 @media screen and (max-width:600px) {
     .toggle-icon{
         display: block;
@@ -122,11 +111,19 @@ button{
         font-size: 23px;
         cursor: pointer;
     }
-    .mySlides h1{
-        font-size: 50px;
+    .dropdown-item{
+        margin-top: 0.2rem;
     }
-    .mySlides p{
-        font-size: 15px;
+    .text h2{
+        text-align: center;
+        font-size: 30px;
+        margin-top: -1rem;
+    }
+    .text p{
+        text-align: center;
+    }
+    .text button{
+        margin-left: 9.5rem;
     }
 }
 @media screen and (max-width:400px) {
@@ -136,12 +133,22 @@ button{
     .toggle-icon i{
         font-size: 23px;
         cursor: pointer;
-    }
-    .mySlides h1{
-        text-align: center;
-        font-size: 50px;
-    }
-    .mySlides p{
-        font-size: 15px;
-    }
+}
+.carousel-item img{
+    height: 70vh;
+}
+.dropdown-item{
+    margin-top: 0.2rem;
+}
+.text h2{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -1rem;
+}
+.text p{
+    text-align: center;
+}
+.text button{
+    margin-left: 6.5rem;
+}
 }
