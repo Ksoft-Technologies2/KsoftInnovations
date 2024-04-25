@@ -105,6 +105,11 @@ button{
   }
   .carousel-caption h1{
     color: navy;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .carousel-caption p{
+    color: navy;
   }
 @media screen and (max-width:600px) {
     .toggle-icon{
