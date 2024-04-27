@@ -1,184 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ksoft Innovations</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="Libraries/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ksoft Innovations</title>
+  <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="Libraries/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="Libraries/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="index.html"><img src="img/logoKsoftTech.png" alt=""></a>
+  <header>
+    <nav class="navbar navbar-expand-lg bg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="img/logoKsoftTech.png" alt="" height="85"></a>
+        <!-- =======================toggle btn starts here================================== -->
+        <div class="toggle-btn">
+          <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa fa-bars"></i></button>
 
-
-
-              <div class="toggle-icon">
-                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa fa-bars"></i></button>
-
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                  <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                  </div>
-                  <hr>
-                  <div class="offcanvas-body">
-                    <div class="navs">
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Services <i class="fa fa-chevron-down" style="font-size: 13px;"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="#">Custom Software Development</a></li>
-                          <li><a class="dropdown-item" href="#">Software Integration</a></li>
-                          <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
-                          <li><a class="dropdown-item" href="#">Website Development</a></li>
-                          <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
-                          <li><a class="dropdown-item" href="#">Project Management</a></li>
-                          <li><a class="dropdown-item" href="#">Blog Homepage</a></li>
-                        </ul>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                      </li>
-                      <div class="mailpage">
-                        <i class="fa fa-envelope" style="font-size: 50px;"></i>
-                        <div class="mailname">
-                          <a href="mailto:isaaccoder936@gmail.com">Get In Touch</a>
-                          <br>
-                          <a href="mailto:isaaccoder936@gmail.com">Isaaccoder936@gmail.com</a>
-                        </div>
-                      </div>
-                      <div class="callpage">
-                        <i class="fa fa-phone" style="font-size: 50px;"></i>
-                        <div class="callname">
-                          <a href="tel:0901-813-6859">Call us Via</a>
-                          <br>
-                          <a href="tel:0901-813-6859">+234-901-813-6859</a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-             
-
-
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Services <i class="fa fa-chevron-down" style="font-size: 13px;"></i>
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Custom Software Development</a></li>
-                      <li><a class="dropdown-item" href="#">Software Integration</a></li>
-                      <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
-                      <li><a class="dropdown-item" href="#">Website Development</a></li>
-                      <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
-                      <li><a class="dropdown-item" href="#">Project Management</a></li>
-                      <li><a class="dropdown-item" href="#">Blog Homepage</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <button class="btnButton"><i class="fa fa-user"></i> Get A Quote</button>
-                </ul>
-              </div>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Menu</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </nav>
-    </header>
-    <section class="slide-div">
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/kimg1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1>The Best IT Solutions Your Business.</h1>
-              <p>We provide the wide range of high quality IT services and best practices solutions to our customers making their business better.</p>
-              <button>Start Your Project</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/kimg2.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1>Award-Winning Software Development</h1>
-              <p>We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
-              <button>View Case Studies</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/kimg3.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-md-block">
-              <h1>24/7 Tech & Business Support</h1>
-              <p>We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.</p>
-              <button>Work With Us</button>
+            <hr>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services <i class="fa fa-plus"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Custom Software Development</a></li>
+                    <li><a class="dropdown-item" href="#">Software Integration</a></li>
+                    <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                    <li><a class="dropdown-item" href="#">Website Development</a></li>
+                    <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                    <li><a class="dropdown-item" href="#">Project Management</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Homepage</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <!-- =======================toggle btn ends here================================== -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services <i class="fa fa-plus"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Custom Software Development</a></li>
+                <li><a class="dropdown-item" href="#">Software Integration</a></li>
+                <li><a class="dropdown-item" href="#">Mobile App Development</a></li>
+                <li><a class="dropdown-item" href="#">Website Development</a></li>
+                <li><a class="dropdown-item" href="#">UI/UX Design</a></li>
+                <li><a class="dropdown-item" href="#">Project Management</a></li>
+                <li><a class="dropdown-item" href="#">Blog Homepage</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <button class="btn btn-danger"><i class="fa fa-user"></i> Get A Quote</button>
+          </form>
+        </div>
       </div>
-    </section>
-    <section class="notes row">
-      <div class="text col-md-6">
-        <h2>Award-Winning SoftwareCompany</h2>
-        <p>We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
-        <button>More About Us</button>
-      </div>
-      <div class="image col-md-6 p-4">
-        <img src="img/kimg4.jpeg" alt="">
-      </div>
-    </section>
-    <section class="services">
-      <h1>Our Services</h1>
-      <div class="quote row">
-        <p class="col-md-9">We are focused on helping brands grow through digital transformation services. We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision.</p>
-        <a href="" class="col-md-3">See all Services</a>
-      </div>
-    </section>
-    <section class="row">
-<div class="col-md-6"></div>
-<div class="col-md-6"></div>
-    </section>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>TAKE YOUR BUSINESS <br>TO THE NEXT LEVEL</h1>
+    <br>
+    <h6>Websites should be an engine for growth; not just a preety brochure. <br>Great web design is like a first date.</h6>
+    <h6>First impressions matters and we can  certainly help u deliver that "WoW" factor.</h6>
+  </section>
 
-     <script src="js/textslide.js"></script>
-     <script src="Libraries/bootstrap/js/popper.js"></script>
-    <script src="Libraries/bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="Libraries/bootstrap/js/popper.js"></script>
+  <script src="Libraries/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/darklight.js"></script>
 </body>
 </html>
