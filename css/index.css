@@ -8,6 +8,7 @@
 header{
     background: #FFFFFF;
     height: 15vh;
+    width: 100% !important;
     position: sticky;
     top: 0;
     z-index: 10;
@@ -47,6 +48,7 @@ header{
     background-size: cover;
     object-fit: contain;
     height: 100vh;
+    width: 100% !important;
     padding: 1rem;
 }
 .hero h1{
@@ -54,14 +56,113 @@ header{
     color: #fff;
     font-weight: bold;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin-top: 5rem;
+    margin-top: 9rem;
 }
 .hero h6{
     text-align: left;
     color: #fff;
 }
+.hero button{
+    background: #6366f1;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.hero button:hover{
+    background: blue;
+}
 .toggle-btn{
     display: none;
+}
+.award{
+    margin-top: 4rem !important;
+    padding: 1rem;
+}
+.award h1{
+ font-weight: bold;
+}
+.award a{
+    text-decoration: none;
+    background: #6366f1;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+}
+.award a:hover{
+    background: blue;
+}
+.image img{
+    height: 90vh;
+    width: 100%;
+    border-radius: 1rem;
+}
+.services{
+    padding: 2rem;
+    margin-top: 4rem;
+    background: #DADDE2;
+    height: 250vh;
+}
+.services h2{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3E4265;
+}
+.services h6{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.work{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+.work-two{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+.work-three{
+    display: flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+}
+.general-container{
+    background: #fff;
+    height: 30vh;
+    width: 50%;
+    padding: 1rem;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+    border-radius: 1rem;
+}
+.general-container h1{
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+}
+.general-container h1 i{
+    color: #6366f1;
+}
+.general-container p{
+    color: #3E4265;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 1rem;
+}
+.general-container a{
+    text-decoration: none;
+}
+.profile img{
+    background: #6366f1;
+    padding: 1rem;
+    margin-top: -4rem;
+    border-radius: 0.6rem;
 }
 @media screen and (max-width: 400px) {
     .navbar-brand img{
@@ -73,5 +174,67 @@ header{
     .toggle-btn i{
         font-size: 25px;
         margin-right: -3rem;
+        margin-top: 0.5rem;
+    }
+    .offcanvas-body .nav-link{
+        margin-bottom: 1rem;
+    }
+    .toggle-btn .btn{
+        border: none;
+        outline: none;
+    }
+    .services{
+        background: #DADDE2;
+        height: 400vh;
+    }
+    .work{
+        flex-direction: column;
+    }
+    .second-container{
+        margin-top: 2.5rem;
+    }
+    .work-two{
+        flex-direction: column;
+        margin-top: 3.5rem;
+    }
+    .work-three{
+        flex-direction: column;
+        margin-top: 3.5rem;
+    }
+    .general-container{
+        height: 35vh;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .navbar-brand img{
+        margin-top: -0.8rem;
+    }
+    .toggle-btn{
+        display: block;
+    }
+    .toggle-btn i{
+        font-size: 25px;
+        margin-right: -3rem;
+        margin-top: -0.8rem;
+    }
+    .offcanvas-body .nav-link{
+        margin-bottom: 1rem;
+    }
+    .toggle-btn .btn{
+        border: none;
+        outline: none;
+    }
+    .services{
+        background: #DADDE2;
+    }
+    .work{
+        flex-direction: column;
+    }
+    .work-two{
+        flex-direction: column;
+    }
+    .work-three{
+        flex-direction: column;
     }
 }
