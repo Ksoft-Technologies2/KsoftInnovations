@@ -5,14 +5,35 @@
     box-sizing: border-box;
     font-family: "Montserrat", sans-serif;
 }
-header{
-    background: #FFFFFF;
-    height: 15vh;
-    width: 100% !important;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+.social-media{
+    display: flex;
+    gap: 0.5rem;
 }
+.social-media i{
+    background: #344055;
+    color: #fff;
+    height: 6vh;
+    width: 6vh;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.social-media i:hover{
+    background: skyblue;
+}
+.changeTheme {
+    background: #1D1E22;
+    color: #fff;
+  }
+  #theme-btn {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #596AFF;
+    margin-right: 1rem;
+  }
+  #theme-btn:hover {
+    color: #BB86FC;
+  }
 .navbar-brand img{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -105,18 +126,38 @@ header{
 .services{
     padding: 2rem;
     margin-top: 4rem;
-    background: #DADDE2;
-    height: 250vh;
+    background: #FFFFFF0D;
+    height: 185vh;
 }
 .services h2{
-    text-align: center;
-    font-size: 30px;
+    text-align: left;
+    font-size: 40px;
     font-weight: bold;
     color: #3E4265;
 }
-.services h6{
+.service-list{
+    display: flex;
+    gap: 25rem;
+}
+.service-list p{
+    text-align: left;
+    font-family: 'poppins', sans-serif;
+}
+.service-list a{
+    text-decoration: none;
+    color: #6366f1;
+    border: 1px solid #6366f1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    width: 30%;
+    height: 10vh;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-top: -1rem;
+}
+.service-list a:hover{
+    background: #6366f1;
+    color: #fff;
 }
 .work{
     display: flex;
@@ -164,17 +205,47 @@ header{
     margin-top: -4rem;
     border-radius: 0.6rem;
 }
+.case-studies h1{
+    text-align: left;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.case-paragraph{
+    display: flex;
+    justify-content: space-between;
+}
+.case-paragraph a{
+    text-decoration: none;
+    text-align: center;
+    color: #6366f1;
+    border: 1px solid #6366f1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: 0.3s;
+    margin-top: -1.3rem;
+    width: 20%;
+    height: 10vh;
+}
+.case-paragraph a:hover{
+    background: #6366f1;
+    color: #fff;
+}
+.choose h1{
+    text-align: center;
+    margin-top: 4rem;
+}
 @media screen and (max-width: 400px) {
     .navbar-brand img{
-        margin-top: 0.1rem;
+        margin-bottom: -1rem !important;
+        /* margin-top: 1rem !important; */
     }
     .toggle-btn{
         display: block;
+        margin-bottom: -1rem;
     }
     .toggle-btn i{
         font-size: 25px;
         margin-right: -3rem;
-        margin-top: 0.5rem;
     }
     .offcanvas-body .nav-link{
         margin-bottom: 1rem;
@@ -236,5 +307,8 @@ header{
     }
     .work-three{
         flex-direction: column;
+    }
+    #theme-btn{
+        display: block;
     }
 }
